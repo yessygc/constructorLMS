@@ -54,7 +54,7 @@ ROOT_URLCONF = 'constructorLMS.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:/constructorLMS/constructorLMS/plantillas/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

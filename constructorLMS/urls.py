@@ -18,10 +18,20 @@ from django.urls import path
 from constructorLMS.views import bienvenida
 from constructorLMS.views import bienvenidaRojo
 from constructorLMS.views import miprimeraPlantilla
+from constructorLMS.views import plantillaCargador
+from constructorLMS.views import plantillaShortcut
+from constructorLMS.views import constructor
+from constructorLMS.views import plantillaNavegacion
+from constructorLMS.views import plantillaMinimizado
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('bienvenida/', bienvenida),
     path('bienvenida123/', bienvenidaRojo),
     path('plantilla/', miprimeraPlantilla),
+    path('plantillaCargador/', plantillaCargador),
+    path('plantillaShortcut/', plantillaShortcut),
+    path('constructor/', constructor),
+    path('navegacion/', plantillaNavegacion),
+    path('minimizado/', plantillaMinimizado)
 ]
