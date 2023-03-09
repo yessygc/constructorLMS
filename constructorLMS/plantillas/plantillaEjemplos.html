@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Plantilla Ejemplo</title>
+        <style type="text/css">
+            li {
+                color: red
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Nombre de la persona: {{nomrePersona}}</h1>
+        <h2>Fecha Actual: {{fechaActual.day}} / {{fechaActual.month}} / {{fechaActual.year}}</h2>
+        {# Este es un comentario #}
+        <h3>No. de lenguajes: {{lenguajes|length}} </h3>
+        <ul>
+            {% for leng in lenguajes %}
+                {% if leng == 'PHP' %}
+                    <li style='color: green;'>{{leng}}</li>
+                {% else %}
+                <li>{{leng|first}} : {{leng|lower}} </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        {% comment %}
+        <nav>
+            |
+            <ul id="menu">
+                <li><a href="slidermenu.html"></a></li>
+                <li><a href="perfil.html"></a></li>
+				<li><a href="config.html"></a></li>
+        </nav>
+        {% endcomment %}
+    </body>
+</html>
+
