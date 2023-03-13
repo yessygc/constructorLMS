@@ -1,9 +1,44 @@
-{% extends "plantillaPadre.html" %}
-
-{% block title %} Plantilla Hija 1 {% endblock %}
-
-{% block content %}
-<p>
-    Aquí va la barra de navegación.
-</p>
-{% endblock %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Componentes</title>
+        <link type='text/css' rel="stylesheet" href='{% static "css/styleComponentes.css" %}'>
+    </head>
+<body>
+    <header class="barra">
+        <h1>Menu</h1>
+    </header>
+    <div class="grid-layout">
+        <main class="diapositivas">
+            <div class="minimizado">
+                Minimizado
+            </div>
+        </main>
+        <main class="visor">
+            <div class="vis">
+                Visor
+            </div>
+        </main>
+        <aside class="barraComponentes">
+            <div class="texto">
+                Texto
+            </div>
+            <div class="imagen">
+                Imagen
+            </div>
+            <div class="video">
+                Video
+            </div>
+            <div class="audio">
+                Audio
+            </div>
+        </aside>
+        <main class="editor">
+            <div class="componentes">
+                Editor de componentes
+            </div>
+        </main>
+    </div>
+</body>
+</html>

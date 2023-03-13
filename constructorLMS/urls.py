@@ -23,6 +23,7 @@ from constructorLMS.views import plantillaShortcut
 from constructorLMS.views import constructor
 from constructorLMS.views import plantillaNavegacion
 from constructorLMS.views import plantillaMinimizado
+from constructorLMS.views import plantillaComponentes
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -33,5 +34,6 @@ urlpatterns = [
     path('plantillaShortcut/', plantillaShortcut),
     path('constructor/', constructor),
     path('navegacion/', plantillaNavegacion),
-    path('minimizado/', plantillaMinimizado)
+    path('minimizado/', plantillaMinimizado),
+    path('componentes/', plantillaComponentes),
 ]

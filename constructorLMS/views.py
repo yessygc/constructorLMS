@@ -70,5 +70,5 @@ def plantillaNavegacion(request):
 def plantillaMinimizado(request):
     return render(request, 'plantillaMinimizado.html', {})
 
-def plantillaVisor(request):
-    return render(request, 'plantillaMinimizado.html', {})
+def plantillaComponentes(request):
+    return render(request, 'plantillaComponentes.html', {})
