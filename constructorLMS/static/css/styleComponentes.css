@@ -1,50 +1,105 @@
 * {
     margin: 0;
     padding: 0;
+    outline: 0;
+    box-sizing: border-box;
 }
-
-body {
-    background-color: grey;
+body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: blueviolet;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
-.grid-layout {
+.menu {
+    background-color: #BEBEBE;
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+}
+
+nav ul{
+    display: flex !important;
+    list-style: none;
+}
+
+nav ul i {
+    font-size: 25px;
+    margin: 5px 25px;
+}
+
+button {
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    margin: 5px 25px;
+}
+
+main {
+    background-color: red;
+    width: 100vw;
+    height: calc(100vh - 50px);
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: auto;
-    justify-content: stretch;
+}
 
+main .left {
+    background-color: #DFDFDF;
+    overflow: scroll;
+}
+
+main .left ul {
     width: 100%;
-    margin: 0;
-    background-color: blueviolet;
-    border: 1px solid black;
+    list-style: none;
 }
 
-.minimizado {
-    border: 1px solid black;
-    background-color: brown;
-    text-align: center;
-    line-height: 150px;
-
+main .left ul li {
+    width: calc(100% - 30px);
+    height: 100px;
+    margin: 15px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.visor {
-    border: 1px solid black;
-    background-color: aqua;
-    text-align: center;
-    line-height: 150px;
+
+main .center {
+    background-color: #FFF;
+    padding: 25px;
 }
 
-.barraComponentes {
-    border: 1px solid black;
-    background-color: blue;
-    text-align: center;
-    line-height: 150px;
+main .center .box-visor {
+    background-color: #DFDFDF;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.editorComponentes{
-    border: 1px solid black;
-    background-color: aquamarine;
-    text-align: center;
-    line-height: 150px;
+main .right {
+    background-color: #DFDFDF;
 }
+
+main .right ul {
+    width: 100%;
+    list-style: none;
+}
+
+main .right ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 5px;
+    cursor: pointer;
+}
+
+main .right ul li:hover{
+    background-color: #ccc;
+}
+
